@@ -29,6 +29,7 @@ def api_docs():
     <!DOCTYPE html>
     <html lang="sv">
     <head>
+    <!-- Har fått hjälp av AI med CSS koden -->
         <meta charset="UTF-8">
         <title>API Dokumentation</title>
         <style>
@@ -71,37 +72,37 @@ def api_docs():
 
         <div class="route">
             <div class="top-line">GET <span class="path">/</span></div>
-            <div>Visar dokumentation - kräver JWT</div>
+            <div>Visar dokumentation - kräver token</div>
         </div>
 
         <div class="route">
             <div class="top-line">GET <span class="path">/users</span></div>
-            <div>Hämtar alla användare - kräver JWT</div>
+            <div>Hämtar alla användare - kräver token</div>
         </div>
 
         <div class="route">
             <div class="top-line">GET <span class="path">/users/&lt;id&gt;</span></div>
-            <div>Hämtar en användare - kräver JWT</div>
+            <div>Hämtar en användare - kräver token</div>
         </div>
 
         <div class="route">
             <div class="top-line">POST <span class="path">/users</span></div>
-            <div>Skapar en användare - Öppen</div>
+            <div>Skapar en användare - kräver inte token</div>
         </div>
 
         <div class="route">
             <div class="top-line">PUT <span class="path">/users/&lt;id&gt;</span></div>
-            <div>Uppdaterar en användare - kräver JWT</div>
+            <div>Uppdaterar en användare - kräver token</div>
         </div>
 
         <div class="route">
             <div class="top-line">POST <span class="path">/login</span></div>
-            <div>Loggar in och får token - Öppen</div>
+            <div>Loggar in och får token - kräver inte token</div>
         </div>
 
          <div class="route">
             <div class="top-line">GET <span class="path">/protected</span></div>
-            <div>Skyddar route - kräver JWT </div>
+            <div>Skyddar route - kräver token</div>
         </div>
 
     </body>
